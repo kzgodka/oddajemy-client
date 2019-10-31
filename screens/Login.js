@@ -56,14 +56,14 @@ export default class Login extends Component {
 
     login = () => {
 
-        fetch('http://0.0.0.0:3000/users', {
+        fetch('http://localhost:3000/users', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: this.state.email,
+                username: this.state.email,
                 password: this.state.password,
             })
         })

@@ -11,11 +11,13 @@ import {createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import Profile from './screens/Profile';
 
 
 const LoginStack = createStackNavigator( {
   Login: Login,
   Signup: Signup,
+  Profile: Profile,
 })
 
 const LoginNav = createAppContainer(LoginStack);
